@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Exercise 1</title>
+    <link rel='icon' type='image/x-icon' href="https://picsum.photos/id/870/200/300?grayscale&blur=2" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body >
+	<h1>
+		<center>
+		<b> Kalkulator	</b>	
+	</center>	
+	</h1>
+	<br>
+	<br>
+
+	<br>
+	<div class="card" style="background: burlywood">
+                    <div class="card-body" >
+	<form name="fkalkulator"><table>
+		<tr><td>masukan bilangan 1 = </td><td><input type="text" name="bil1"></td></tr>
+		<tr><td>masukan bilangan 2 = </td><td><input type="text" name="bil2"></td></tr>
+		<tr><td>hasilnya =</td><td><input type="text" name="hasil" onclick="penjumlahan()"></td></tr><br> </table><br>
+		<input type="button" name="" value="Penjumlahan" onclick="penjumlahan()">
+		<input type="button" name="" value="Pengurangan" onclick="pengurangan()">
+		<input type="button" name="" value="Perkalian" onclick="perkalian()">
+		<input type="button" name="" value="Pembagian" onclick="pembagian()">
+		<br>
+		<br>
+		<input type="reset" name="" value="Reset">
+		</form>
+ 	 </div>
+ 	</div>
+
+     
+     <br>
+     <br>
+    <script type="text/javascript">
+	function penjumlahan(){
+	var a=parseFloat(document.fkalkulator.bil1.value)
+ 	var b=parseFloat(document.fkalkulator.bil2.value)
+
+ 	var c=a+b
+ 	document.fkalkulator.hasil.value=c
+	}
+
+
+	function pengurangan(){
+ 	var a=parseFloat(document.fkalkulator.bil1.value)
+ 	var b=parseFloat(document.fkalkulator.bil2.value)
+	var d=a-b
+ 	document.fkalkulator.hasil.value=d
+	}
+
+	function perkalian(){
+	var a=parseFloat(document.fkalkulator.bil1.value)
+ 	var b=parseFloat(document.fkalkulator.bil2.value)
+	var e=a*b
+ 	document.fkalkulator.hasil.value=e
+	}
+
+	function pembagian(){
+	var a=parseFloat(document.fkalkulator.bil1.value)
+ 	var b=parseFloat(document.fkalkulator.bil2.value)
+	var f=a/b
+ 	document.fkalkulator.hasil.value=f
+	}
+
+	</script>
+
+	</body>
+	</html>
